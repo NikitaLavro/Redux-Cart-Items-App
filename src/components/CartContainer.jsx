@@ -1,6 +1,9 @@
 import React from "react";
+
+//redux
 import { useSelector } from "react-redux";
 
+//components
 import CartItem from "./CartItem";
 
 const CartContainer = () => {
@@ -21,8 +24,8 @@ const CartContainer = () => {
         <h2>your bag</h2>
       </header>
       <div>
-        {cartItems.map((cartItem) => (
-          <CartItem key={cartItem.id} {...cartItem} />
+        {cartItems.map((item) => (
+          <CartItem key={item.id} {...item} />
         ))}
       </div>
       <footer>
